@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özel Taş Ürünler</title>
+    <link rel="shortcut icon" href="melissa 12.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="logo-title">
+            <img src="melissa 12.png" alt="GreenLand Logo" class="logo">
+            <h1>GreenLand Mimarlık</h1>
+          </div>
+          <div class="menu-toggle">☰</div>
+          <nav>
+            <a href="index.html" onclick="scrollToTop()">Anasayfa</a>
+            <a href="hakkında.html">Hakkında</a>
+            <a href="index.html#news">Haberler</a>
+            <a href="index.html#testimonial">Referanslar</a>
+            <div class="dropdown">
+              <a href="services.html" class="dropbtn">Hizmetlerimiz</a>
+              <div class="dropdown-content">
+                <a href="ahsap.html">Ahşap</a>
+                <a href="sulama.html">Sulama sistemleri</a>
+                <a href="proje.html">Mimari ve Peyzaj proje uygulama danışma</a>
+                <a href="tas.html">Taş grupları</a>
+                <a href="bahce.html">Bahçe su dekorasyonu</a>
+              </div>
+            </div>
+            <a href="index.html#gallery">Galeri</a>
+          </nav>
+        </div>
+      </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Taş Grupları Hizmetlerimiz</h1>
+            <p>Doğal ve dayanıklı taş çözümlerimizle yaşam alanlarınızı zenginleştirin</p>
+        </div>
+    </section>
+
+    <section id="taslar" class="container">
+        <h2>Özel Taş Ürünler</h2>
+        <div class="card-grid">
+            <div class="card" onclick="enlargeImage(this.querySelector('img'))">
+                <img src="https://i.pinimg.com/564x/1b/2f/c4/1b2fc46fbe7ed15558796fa42ef3447f.jpg" alt="Harpuşta">
+                <div class="card-content">
+                    <h3>Harpuşta</h3>
+                    <p>Dayanıklı ve estetik Harpuşta taşları.</p>
+                </div>
+            </div>
+            <div class="card" onclick="enlargeImage(this.querySelector('img'))">
+                <img src="https://i.pinimg.com/474x/99/35/4e/99354e2b6909af19b5f9f477c7bec55d.jpg" alt="Oluk">
+                <div class="card-content">
+                    <h3>Oluk</h3>
+                    <p>Fonksiyonel ve şık Oluk taşları.</p>
+                </div>
+            </div>
+            <div class="card" onclick="enlargeImage(this.querySelector('img'))">
+                <img src="https://i.pinimg.com/564x/60/1c/26/601c265d340e84a2ca5d1eec23ec78dd.jpg" alt="Çim Taşı">
+                <div class="card-content">
+                    <h3>Çim Taşı</h3>
+                    <p>Estetik ve dayanıklı Çim taşları.</p>
+                </div>
+            </div>
+            <div class="card" onclick="enlargeImage(this.querySelector('img'))">
+                <img src="https://i.pinimg.com/564x/96/46/01/964601b62a454146518d92464edbd7a6.jpg" alt="Çiçeklikli Sert Taşı">
+                <div class="card-content">
+                    <h3>Çiçeklikli Sert Taşı</h3>
+                    <p>Özel tasarım Çiçeklikli Sert taşları.</p>
+                </div>
+            </div>
+            <div class="card" onclick="enlargeImage(this.querySelector('img'))">
+                <img src="https://www.aktascini.com.tr/wp-content/uploads/2023/04/Siyah-Kirma-Blok-Tasi-600x450.png" alt="Kırma Blok">
+                <div class="card-content">
+                    <h3>Kırma Blok</h3>
+                    <p>Dayanıklı Kırma blok taşları.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="iletisim" class="section">
+        <div class="container">
+            <h2>Bize Ulaşın</h2>
+            <p>Sulama sistemleri hakkında daha fazla bilgi almak veya projeniz için teklif istemek isterseniz, lütfen bizimle iletişime geçin.</p>
+            <a href="mailto: greenlandmimarlik@gmail.com" class="btn">E-posta Gönder</a>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="column">
+                    <h3>Hakkımızda</h3>
+                    <p>GreenLand Mimarlık, Sulama sistemleri ve bakımı konusunda uzmanlaşmış bir firmadır. Doğal yaşam alanları yaratma konusundaki tutkumuzla her projede en iyisini sunmaktayız.</p>
+                </div>
+                <div class="column">
+                    <h3>Hizmetlerimiz</h3>
+                    <p>Ahşap Dekarasyon<br>Sulama sistemleri<br>Peyzaj Mimari Projeler</p>
+                </div>
+                <div class="column">
+                    <h3>İletişim</h3>
+                    <p>Adres: <a href="#" onclick="showMap()">D020, Çavuş, 34980 Şile/İstanbul</a> <br>Telefon: +90 216 766 3044<br>Email: greenlandmimarlik@gmail.com</p>
+                </div>
+                <div class="column">
+                    <h3>Bize Ulaşın</h3>
+                    <form action="send_email.php" method="POST">
+                        <input type="text" name="name" placeholder="Adınız" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="4" placeholder="Mesajınız" required></textarea>
+                        <button type="submit">Gönder</button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/greenlandmimarlik">Instagram</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 GreenLand Mimarlık. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+
+    <div class="fab-container">
+        <div class="fab" onclick="scrollToTop()">
+            ↑
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const nav = document.querySelector('header nav');
+
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function enlargeImage(img) {
+            const modal = document.createElement('div');
+            modal.style.position = 'fixed';
+            modal.style.top = '0';
+            modal.style.left = '0';
+            modal.style.width = '100%';
+            modal.style.height = '100%';
+            modal.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+            modal.style.display = 'flex';
+            modal.style.alignItems = 'center';
+            modal.style.justifyContent = 'center';
+            modal.style.zIndex = '10000';
+
+            const modalImg = document.createElement('img');
+            modalImg.src = img.src;
+            modalImg.style.maxWidth = '90%';
+            modalImg.style.maxHeight = '90%';
+
+            modal.appendChild(modalImg);
+            document.body.appendChild(modal);
+
+            modal.addEventListener('click', function() {
+                document.body.removeChild(modal);
+            });
+        }
+
+        function showMap() {
+            const mapUrl = `https://www.google.com/maps?q=41.1539840698242,29.6000671386719&z=15&output=embed`;
+            window.open(mapUrl, '_blank');
+        }
+    </script>
+</body>
+</html>

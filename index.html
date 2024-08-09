@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenLand Mimarlık - Peyzaj Bakımı ve Tasarımı</title>
+    <meta name="description" content="GreenLand Mimarlık olarak peyzaj bakımı ve tasarımı hizmetleri sunuyoruz. Peyzaj fikirlerinizi hayata geçiriyoruz!">
+    <meta name="keywords" content="peyzaj, Ahşap Dekarasyon, Sulama sistemleri, peyzaj hizmetleri, peyzaj mimarisi, GreenLand Mimarlık">
+    <link rel="shortcut icon" href="melissa 12.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+          <div class="logo-title">
+            <img src="melissa 12.png" alt="GreenLand Logo" class="logo">
+            <h1>GreenLand Mimarlık</h1>
+          </div>
+          <div class="menu-toggle">☰</div>
+          <nav>
+            <a href="index.html" onclick="scrollToTop()">Anasayfa</a>
+            <a href="hakkında.html">Hakkında</a>
+            <a href="index.html#news">Haberler</a>
+            <a href="index.html#testimonial">Referanslar</a>
+            <div class="dropdown">
+              <a href="services.html" class="dropbtn">Hizmetlerimiz</a>
+              <div class="dropdown-content">
+                <a href="ahsap.html">Ahşap</a>
+                <a href="sulama.html">Sulama sistemleri</a>
+                <a href="proje.html">Mimari ve Peyzaj proje uygulama danışma</a>
+                <a href="tas.html">Taş grupları</a>
+                <a href="bahce.html">Bahçe su dekorasyonu</a>
+              </div>
+            </div>
+            <a href="index.html#gallery">Galeri</a>
+          </nav>
+        </div>
+      </header>
+      <section class="hero-section">
+        <div class="hero-slider">
+            <div class="slides-container">
+                <div class="slide active">
+                    <img src="2.jpg" alt="GreenLand Mimarlık">
+                    <div class="slide-content">
+                        <h2>GreenLand Mimarlık</h2>
+                        <p>Doğayla uyumlu yaşam alanları yaratıyoruz</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="1.jpg" alt="Profesyonel Peyzaj">
+                    <div class="slide-content">
+                        <h2>Profesyonel Peyzaj Çözümleri</h2>
+                        <p>Peyzaj ve inşaat projelerinizde ihtiyacınız olan tüm inşaat araçlarıyla yanınızdayız.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="3.jpg" alt="Sürdürülebilir Tasarım">
+                    <div class="slide-content">
+                        <h2>Sürdürülebilir Tasarımlar</h2>
+                        <p>Çevre dostu projelerle geleceğe yatırım yapın</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-nav">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+    <section id="news">
+        <div class="container">
+            <h2>Haberler</h2>
+            <div class="news-cards">
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Haber 1" onclick="enlargeImage(this)">
+                    <p>Yeni projelerimiz hakkında bilgi edinin</p>
+                </div>
+                <div class="card">
+                    <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Haber 2" onclick="enlargeImage(this)">
+                    <p>Ahşap Dekarasyonnda dikkat edilmesi gerekenler</p>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7p2RzCg4Jtl4NXeuBkT3lNS7shitr3Aht6A&s" alt="Haber 3" onclick="enlargeImage(this)">
+                    <p>Ödüllerimiz</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2>Hizmetlerimiz</h2>
+            <div class="services-grid">
+                <div class="service-item" onclick="redirectTo('ahsap.html')">
+                    <img src="https://i.pinimg.com/236x/8d/ce/43/8dce43fa182c002d9d3095c7e1a58dc0.jpg" alt="Ahşap Dekarasyon" onclick="enlargeImage(this)">
+                    <h3>Ahşap Dekarasyon</h3>
+                    <p>Estetik ve dayanıklı ahşap malzemelerle yaşam alanlarınızı güzelleştirin.</p>
+                    <a href="ahsap.html" class="btn">Detaylı Bilgi</a>
+                </div>
+                <div class="service-item" onclick="redirectTo('sulama.html')">
+                    <img src="https://i.pinimg.com/736x/d9/86/fc/d986fce6e96b8553f0161fb1c21e1f4c.jpg" alt="Sulama Sistemleri" onclick="enlargeImage(this)">
+                    <h3>Sulama Sistemleri</h3>
+                    <p>Bahçelerinizin her daim yeşil ve canlı kalması için modern ve verimli sulama çözümleri sunuyoruz.</p>
+                    <a href="sulama.html" class="btn">Detaylı Bilgi</a>
+                </div>
+                <div class="service-item" onclick="redirectTo('proje.html')">
+                    <img src="https://i.pinimg.com/564x/85/4d/4e/854d4e1daf8283ae32d9e5dd7466da4f.jpg" alt="Mimari ve Peyzaj proje uygulama danışma" onclick="enlargeImage(this)">
+                    <h3>Mimari ve Peyzaj proje uygulama danışma</h3>
+                    <p>Estetik ve fonksiyonelliği bir araya getirerek hayallerinizdeki mekanları gerçeğe dönüştürüyoruz.</p>
+                    <a href="proje.html" class="btn">Detaylı Bilgi</a>
+                </div>
+                <div class="service-item">
+                    <img src="https://i.pinimg.com/564x/28/cb/56/28cb56275e2d47a37ebf0e4e328310ed.jpg" alt="Rulo Çim" onclick="enlargeImage(this)">
+                    <h3>Rulo Çim</h3>
+                    <p>Hızlı ve pratik bir şekilde yemyeşil çim alanlar oluşturmanızı sağlayan kaliteli rulo çim hizmetleri sunuyoruz.</p>
+                    <a href="rulo.html" class="btn">Detaylı Bilgi</a>
+                </div>
+                <div class="service-item">
+                    <img src="https://i.pinimg.com/564x/42/35/d5/4235d55b7a17e88badafc22ee34cc33e.jpg" alt="Taş Grupları" onclick="enlargeImage(this)">
+                    <h3>Taş Grupları</h3>
+                    <p>Bahçelerinizde doğal ve şık alanlar yaratmak için çeşitli taş grupları ve uygulamaları sunuyoruz.</p>
+                    <a href="tas.html" class="btn">Detaylı Bilgi</a>
+                </div>
+                <div class="service-item">
+                    <img src="https://i.pinimg.com/564x/95/4f/87/954f87a597f9012156d5bbe8a3e4885a.jpg" alt="Bahçe Su Dekorasyonu" onclick="enlargeImage(this)">
+                    <h3>Bahçe Su Dekorasyonu</h3>
+                    <p>Çevre dostu ve sürdürülebilir peyzaj çözümleri sunuyoruz.</p>
+                    <a href="bahce.html" class="btn">Detaylı Bilgi</a>
+                </div>
+                <div class="service-item">
+                    <img src="https://i.pinimg.com/564x/1a/6c/25/1a6c25d6904ce189cac42cbe6ce54751.jpg" alt="Oyun Bahçeleri" onclick="enlargeImage(this)">
+                    <h3>Oyun Bahçeleri</h3>
+                    <p>Çocukların güvenle ve keyifle vakit geçirebileceği yaratıcı ve eğlenceli oyun alanları tasarlıyoruz.</p>
+                    <a href="oyun.html" class="btn">Detaylı Bilgi</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Galeri</h2>
+            <div class="photo-grid">
+                <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Fotoğraf 1" onclick="enlargeImage(this)">
+                <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Fotoğraf 2" onclick="enlargeImage(this)">
+                <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Fotoğraf 3" onclick="enlargeImage(this)">
+                <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Fotoğraf 4" onclick="enlargeImage(this)">
+                <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Fotoğraf 5" onclick="enlargeImage(this)">
+                <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Fotoğraf 6" onclick="enlargeImage(this)">
+                <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Fotoğraf 7" onclick="enlargeImage(this)">
+                <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Fotoğraf 8" onclick="enlargeImage(this)">
+                <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Fotoğraf 9" onclick="enlargeImage(this)">
+                <img src="https://i.pinimg.com/564x/10/42/85/10428536921907fa077bc1a8f248b026.jpg" alt="Fotoğraf 10" onclick="enlargeImage(this)">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-columns">
+                <div class="column">
+                    <h3>Hakkımızda</h3>
+                    <p>GreenLand Mimarlık, Sulama sistemleri ve bakımı konusunda uzmanlaşmış bir firmadır. Doğal yaşam alanları yaratma konusundaki tutkumuzla her projede en iyisini sunmaktayız.</p>
+                </div>
+                <div class="column">
+                    <h3>Hizmetlerimiz</h3>
+                    <p>Ahşap Dekarasyon<br>Sulama sistemleri<br>Peyzaj Mimari Projeler</p>
+                </div>
+                <div class="column">
+                    <h3>İletişim</h3>
+                    <p>Adres: <a href="#" onclick="showMap()">D020, Çavuş, 34980 Şile/İstanbul</a> <br>Telefon: +90 216 766 3044<br>Email: greenlandmimarlik@gmail.com</p>
+                </div>
+                <div class="column">
+                    <h3>Bize Ulaşın</h3>
+                    <form action="send_email.php" method="POST">
+                        <input type="text" name="name" placeholder="Adınız" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <textarea name="message" rows="4" placeholder="Mesajınız" required></textarea>
+                        <button type="submit">Gönder</button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-media">
+                <a href="https://www.instagram.com/greenlandmimarlik">Instagram</a>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 GreenLand Mimarlık. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+
+    <div class="fab-container">
+        <div class="fab" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+            ↑
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

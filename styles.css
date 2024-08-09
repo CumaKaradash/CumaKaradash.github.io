@@ -1,0 +1,639 @@
+/* Genel Stil Ayarları */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #111;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #111;
+    color: #ffffff;
+    padding: 20px 0;
+    position: relative;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo-title {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#news {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#news h2, #services h2, #gallery h2, #work h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#news .news-cards, #work .work-description {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#news .card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+#news .card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#news .card p {
+    font-weight: bold;
+}
+
+#testimonial {
+    background-color: #e7e7e7;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#testimonial blockquote {
+    font-style: italic;
+    margin: 40px 0;
+}
+
+#testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#services {
+    background-color: #ffffff;
+    padding: 40px 20px;
+}
+
+#services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+#services .service-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services .service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#services .service-item h3 {
+    margin-top: 10px;
+}
+
+#services .service-item:hover {
+    background-color: #789;
+    color: #ffffff;
+}
+
+#gallery {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#gallery .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+#gallery .photo-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#work {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#work .work-description p {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+#work .clients h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#work .client-logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#work .client-logos img {
+    max-height: 170px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #111;
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer .footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+footer .column {
+    width: calc(25% - 20px);
+}
+
+footer .column h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer .column p {
+    line-height: 1.5;
+}
+
+footer .social-media a {
+    display: inline-block;
+    margin: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #ddd;
+}
+
+footer .footer-bottom {
+    text-align: center;
+    font-size: 0.8em;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+footer form input,
+footer form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #111;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer form button:hover {
+    background-color: #333;
+}
+
+.fab-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.fab {
+    background-color: #111;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.fab:hover {
+    background-color: #333;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #111;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.card-grid, .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.card, .portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img, .portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content, .portfolio-overlay {
+    padding: 20px;
+}
+
+.card h3, .portfolio-overlay h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.card p, .portfolio-overlay p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+.portfolio-item .portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    transform: translateY(0);
+}
+
+.hero-section {
+    display: flex;
+    height: 80vh;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+
+  .slides-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .slide-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .slide-content p {
+    font-size: 1.5rem;
+  }
+
+  .slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+  }
+
+  .slider-nav button {
+    font-size: 3rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .slider-nav button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .slider-dots {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .slider-dots span {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .slider-dots span.active {
+    background-color: #fff;
+  }
+
+/* Mobil Cihazlar İçin Düzenlemeler */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo {
+        height: 40px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #111;
+        padding: 10px;
+    }
+
+    header nav.active {
+        display: block;
+    }
+
+    header nav a {
+        display: block;
+        padding: 10px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    header nav a:last-child {
+        border-bottom: none;
+    }
+
+    #news .card {
+        width: 100%;
+    }
+
+    #work .work-description p {
+        width: 100%;
+    }
+
+    footer .column {
+        width: 100%;
+    }
+
+    #gallery .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #services .services-grid, .portfolio-grid, .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    footer form input,
+    footer form textarea,
+    footer form button {
+        width: 100%;
+    }
+
+    .fab-container {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .fab {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none;
+        width: 100%;
+        background-color: #222;
+    }
+
+    .dropdown-content a {
+        padding-left: 30px;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+}
+
+@media (hover: hover) {
+    #services .service-item:hover {
+        background-color: #789;
+        color: #ffffff;
+    }
+}
+
+@media (hover: none) {
+    #services .service-item:active {
+        background-color: #789;
+        color: #ffffff;
+    }
+}
